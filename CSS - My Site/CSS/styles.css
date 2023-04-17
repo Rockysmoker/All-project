@@ -1,0 +1,185 @@
+body {
+	color: #40514e;
+	margin: 0;
+	font-family: "Merriweather", serif;
+}
+h1 {
+	margin: 0 auto;
+	text-align: center;
+	font-family: "Parisienne", cursive;
+	font-size: 5rem;
+	position: relative;
+	bottom: 30px;
+	color: #66bfbf;
+}
+h2 {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	font-size: 1.1rem;
+	position: relative;
+	bottom: 30px;
+	color: #66bfbf;
+	font-weight: normal;
+}
+
+h3 {
+	font-family: "Montserrat", sans-serif;
+	color: #11999e;
+	font-weight: normal;
+}
+a {
+	font-family: "Montserrat", sans-serif;
+	color: #11999e;
+	text-decoration: none;
+	margin: 10px 20px;
+}
+a:hover {
+	color: #eaf6f6;
+}
+p {
+	line-height: 2;
+	margin-bottom: 60px;
+	line-height: 2;
+}
+hr {
+	border: dotted #40514e;
+	border-bottom: none;
+	width: 5%;
+	margin: 50px auto;
+	border-width: 6px;
+	
+}
+
+.top-container {
+	background-color: #edf1d6;
+	margin: 20px;
+	margin-bottom: 0px;
+	position: relative;
+	padding-top: 150px;
+	height: 650px;
+}
+.middle-container {
+	background-color: #fefcf3;
+	position: relative;
+	margin: 0 20px;
+	text-align: center;
+	padding-bottom: 80px;
+}
+
+.bottom-container {
+	background-color: #66bfbf;
+	position: relative;
+	margin: 0px 20px;
+	text-align: center;
+	padding: 40px 0 5px;
+}
+.mountain {
+	position: absolute;
+	width: 100%;
+	bottom: 1px;
+}
+.cloud-top {
+	position: absolute;
+	width: 180px;
+	height: 100px;
+	right: 220px;
+	top: 130px;
+}
+.cloud-middle {
+	position: absolute;
+	width: 180px;
+	height: 100px;
+	left: 300px;
+	bottom: 650px;
+}
+.cloud-bottom {
+	position: absolute;
+	width: 180px;
+	height: 100px;
+	left: 50px;
+	top: 200px;
+}
+.profilepic {
+	height: 160px;
+	width: 160px;
+	margin: 50px auto;
+}
+.hello {
+	font-size: 2rem;
+}
+.intro {
+	width: 40%;
+	margin: auto;
+}
+.skill-row {
+	width: 50%;
+	margin: 100px auto 100px auto;
+	text-align: left;
+}
+.code-img {
+	width: 27%;
+	float: left;
+	margin-right: 30px;
+}
+.fortnite-img {
+	width: 30%;
+	float: right;
+	margin-left: 30px;
+}
+.my-skills {
+	position: relative;
+	top: 20px;
+	font-size: 2rem;
+}
+.touch {
+	font-size: 2rem;
+	top: 5px;
+}
+.contact-massage {
+	width: 40%;
+	margin: 40px auto 40px;
+}
+.copyright {
+	color: #eaf6f6;
+	font-size: 0.75rem;
+	padding: 30px 0 1px;
+}
+.btn {
+	background: #66bfbf;
+	color: #fff;
+	border: none;
+	position: relative;
+	height: 60px;
+	font-size: 1.6em;
+	padding: 0 2em;
+	cursor: pointer;
+	transition: 800ms ease all;
+	outline: none;
+	font-family: "Montserrat", sans-serif;
+}
+.btn:hover {
+	background: #fefcf3;
+	color: #1aab8a;
+}
+.btn:before,
+.btn:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #1aab8a;
+	transition: 400ms ease all;
+}
+.btn:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+.btn:hover:before,
+.btn:hover:after {
+	width: 100%;
+	transition: 800ms ease all;
+}

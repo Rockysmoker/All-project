@@ -1,0 +1,162 @@
+body {
+	font-family: "Montserrat";
+	text-align: center;
+}
+
+#title .container-fluid {
+	padding: 3% 15% 7%;
+}
+
+h1, h2, h3 {
+	font-family: "Montserrat";
+	font-weight: 900;
+}
+.cta-heading{
+	font-size: 3rem;
+}
+p{
+	color: #8f8f8f;
+}
+.colored-section{
+	background-color: #ff4c68;
+	color: white;
+}
+.white-section{
+background-color: #fff;
+}
+
+/* Headings */
+
+.big-heading{
+	font-family: "Montserrat";
+	font-size: 3.5rem;
+	line-height: 1.5;
+	font-weight: 900;
+}
+.section-heading{
+	font-size: 3rem;
+	line-height: 1.5;
+}
+.container-fluid {
+	padding: 7% 15%;
+}
+/* Navigation Bar */
+.navbar {
+	padding: 0 0 4.5rem;
+}
+.navbar-brand {
+	font-family: "Ubuntu";
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+.nav-ithem {
+	padding: 0 18px;
+}
+.nav-link {
+	font-size: 1.2rem;
+	font-family: "Montserrat-Light" sans-serif;
+}
+
+/* Download buttons */
+
+.download-button {
+	margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
+
+.title-image {
+	width: 22%;
+	transform: rotate(25deg);
+	position: absolute;
+	right: 25%;
+}
+
+/* Features Section */
+#features {
+	position: relative;
+	z-index: 1;
+}
+.feature-text{
+	font-size: 1.5rem;
+}
+.feature-box {
+	padding: 3.5%;
+}
+.icon {
+	color: #ef8172;
+	margin-bottom: 1rem;
+}
+.icon:hover {
+	color: #ff4c68;
+}
+.features-paragraph {
+	color: #8f8f8f;
+}
+
+/* Testimonial Section */
+
+#testimonials {
+	background-color: #ef8172;
+	color: #fff;
+}
+.testimonial-text{
+	font-size: 3rem;
+	line-height: 1.5;
+}
+.testimonial-image {
+	width: 10%;
+	border-radius: 100%;
+	margin: 20px;
+}
+#press {
+	background-color: #ef8172;
+	padding-bottom: 3%;
+}
+
+.press-logo {
+	width: 15%;
+	margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+	padding: 100px;
+}
+.price-text{
+	font-size: 3rem;
+	line-height: 1.5;
+}
+.pricing-column {
+	padding: 3% 2%;
+}
+
+@media screen and (max-width: 1020px) {
+	#title {
+		text-align: center;
+	}
+	.title-image {
+		position: static;
+		transform: rotate(0);
+		width: 60%;
+	}
+}
+
+/* CTA Section */
+
+.button-cta{
+	margin: 5% 3% 5% 0;
+}
+
+#footer{
+	padding: 2% 15%;
+}
+.cta-paragraph{
+	color: #8f8f8f;
+	font-size: 0.75rem;
+	padding: 10px 0 1px;
+}
+.cta-icon{
+	padding: 1rem;
+}
