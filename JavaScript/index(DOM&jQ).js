@@ -88,3 +88,14 @@ $(document).keypress(function (event) {
 $("h1").on("mouseover", function () {
 	$("h1").css("color", "pink");
 });
+
+// Adding some now buttons uning jQuery
+
+// "Before" add the New button just before the h1
+$("h1").before("<button>New</button>");
+// "After" add the New button just after the h1
+$("h1").after("<button>New</button>");
+// "Prepend" add the New button just before the h1 but inside it
+$("h1").prepend("<button>New</button>");
+// "Append" add the New button just after the h1 but inside it
+$("h1").append("<button>New</button>");
