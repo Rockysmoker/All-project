@@ -8,7 +8,7 @@ jQuery("h1").addClass("big-title");
 $("h1").text("Bye");
 $("button").html("<em>Hey</em>");
 
-// We can add using attr difrenf page to our href
+// We can add using attr diffrent page to our href
 $("a").attr("href", "https://www.yahoo.com");
 
 // Below we got the function that change css color for purple by clicking on h1 element
@@ -49,3 +49,8 @@ $("h1").after("<button>New</button>");
 $("h1").prepend("<button>New</button>");
 // "Append" add the New button just after the h1 but inside it
 $("h1").append("<button>New</button>");
+
+// This function show and hide our h1. We can also use hide or show property to manage our h1, toggle works alternately. 
+$("button").on("click", function () {
+	$("h1").toggle();
+});
