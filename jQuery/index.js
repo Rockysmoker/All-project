@@ -50,7 +50,24 @@ $("h1").prepend("<button>New</button>");
 // "Append" add the New button just after the h1 but inside it
 $("h1").append("<button>New</button>");
 
-// This function show and hide our h1. We can also use hide or show property to manage our h1, toggle works alternately. 
+// This function show and hide our h1. We can also use hide or show property to manage our h1, toggle works alternately.
 $("button").on("click", function () {
 	$("h1").toggle();
+});
+/*-----------------------jQuery Animation------------------*/
+
+// The same way as above but appearance look prietier. Fade property.
+$("button").on("click", function () {
+	$("h1").fadeToggle();
+});
+
+// Next we have slide. (slideUp, slideDown, slideToggle). slideToggle works the same way using slideUp and slideDown alternately.
+$("button").on("click", function () {
+	$("h1").slideToggle();
+});
+
+// We can use animate to change the visual way of h1 intensity.
+// !!! In these case very important is that we can use inside {} only the css rule that has numeric value !!!
+$("button").on("click", function () {
+	$("h1").animate({ opacity: 0.5 });
 });
