@@ -90,7 +90,7 @@ print(
     f"Your score is {score}, your height is {height}, you are winning is {isWinning}."
 )
 
-##----------------------DAYS LEFT CALCULATOR--------------------------------
+##----------------------DAYS LEFT CALCULATOR----------------------------
 
 age = input("What is your age?")
 age = int(age)
