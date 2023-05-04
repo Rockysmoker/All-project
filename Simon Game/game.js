@@ -11,11 +11,13 @@ $(".btn").click(function () {
 
 	// We add the contents of the variable userChosenColour to the end of this new userClickedPattern
 	userClickedPattern.push(userChosenColour);
-  //console.log(userClickedPattern);
+	//console.log(userClickedPattern);
 
-  // In the same way we played sound in nextSequence() , when a user clicks on a button, the corresponding sound should be played.
-  playSound(userChosenColour);
-  
+	// In the same way we played sound in nextSequence() , when a user clicks on a button, the corresponding sound should be played.
+	playSound(userChosenColour);
+
+    // We also need to add animatePress here to make animation live.
+    animatePress(userChosenColour);
 });
 
 function nextSequence() {
@@ -30,13 +32,21 @@ function nextSequence() {
 		.fadeOut(100)
 		.fadeIn(100);
 
-  playSound(randomChosenColour);
-
+	playSound(randomChosenColour);
 }
 // We create a new function called playSound() that takes a single input parameter called name.
 function playSound(name) {
+	// Then we take the code we used to play sound in the nextSequence() function and add it to playSound().
+	var audio = new Audio("sounds/" + name + ".mp3");
+	audio.play();
+}
 
-    // Then we take the code we used to play sound in the nextSequence() function and add it to playSound().
-    var audio = new Audio("sounds/" + name + ".mp3");
-    audio.play();
-  }
+function animatePress(currentColor) {
+	// We use jQuery to add this pressed class to the button that gets clicked inside animatePress().
+	$("#" + currentColor).addClass("pressed");
+
+	// We remove the pressed class after a 100 milliseconds.
+	setTimeout(function () {
+		$("#" + currentColor).removeClass("pressed");
+	}, 100);
+}
