@@ -279,6 +279,65 @@ else:
     print(f"Your love socore is {love_score}.")
     
     
-##-------------------------------------------------------------------------
+##-----------------------------RANDOM MODULE---------------------------------
 
+# To make this work we need to remember that we have to import random.
+# This is how we can generate random number between 1,10. 
+
+import random 
+random_integer = random.randint(1,10)
+print (random_integer)
+
+# Random number betwen 0 and 1 but not include 1.
+import random 
+random_float = random.random() * 5
+print (random_float)
+
+# We use random number before, but here is much simplier. 
+import random 
+love_score = random.randint(1,100)
+print(f"Your love score is {love_score}!")
+
+
+##------------------------------Head or Tails-------------------------------
+#Simple program that prints Head or tails
+import random
+
+random_side = random.randint(0, 1)
+if random_side == 1:
+    print("Heads")
+else:
+    print("Tails")
+
+##----------------------------------------------------------------------------
+# We got varible that store all states of america 
+# Then we can print random stat like before 
+
+states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Georgia", "Connecticut", "Massachusetts", "Maryland", "South Carolina", "New Hampshire", "Virginia", "New York", "North Carolina", "Rhode Island", "Vermont", "Kentucky", "Tennessee", "Ohio", "Louisiana", "Indiana", "Mississippi", "Illinois", "Alabama", "Maine", "Missouri", "Arkansas", "Michigan", "Florida", "Texas", "Iowa", "Wisconsin", "California", "Minnesota", "Oregon", "Kansas", "West Virginia", "Nevada", "Nebraska", "Colorado", "North Dakota", "South Dakota", "Montana", "Washington", "Idaho", "Wyoming", "Utah", "Oklahoma", "New Mexico", "Arizona", "Alaska", "Hawaii"]
+
+import random
+print(states_of_america[random.randint(0, 51)])
+
+##---------------------------Banker Roulette---------------------------------
+# Split string method
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+import random
+num_names= len(names)
+random_choice = random.randint(0, num_names - 1)
+person_who_will_pay = names[random_choice]
+print(person_who_will_pay + " is going to buy the meal today!")
+
+##-------------------------------------------------------------------------
+# Below we got two lists that were inside another list 
+# [1][1]First number is list number and second is number of ithem 
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+ 
+dirty_dozen = [fruits, vegetables]
+ 
+print(dirty_dozen[1][1])
 
