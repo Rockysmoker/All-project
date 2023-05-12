@@ -1,6 +1,16 @@
 {
 	"[python]": {
-		"editor.defaultFormatter": "ms-python.black-formatter"
-	},
-	"python.formatting.provider": "none"
+		"editor.defaultFormatter": "ms-python.black-formatter",
+		"editor.tokenColorCustomizations": {
+			"textMateRules": [
+				{
+					"scope": "keyword.control.loop.python",
+					"settings": {
+						"foreground": "#FF0000"
+					}
+				}
+			]
+		},
+		"python.formatting.provider": "none"
+	}
 }
