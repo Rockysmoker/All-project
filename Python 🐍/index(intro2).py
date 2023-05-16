@@ -152,3 +152,6 @@ while at_goal() != True: # != mean not true
   move_squere()
 while not at_goal():     # this mean the same above 
   move_squere()
+
+##-------------------------------HANGMAN-PROCECT--------------------------------
+
