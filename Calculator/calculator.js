@@ -31,3 +31,6 @@ app.post("/bmicalculator", function (req, res) {
 app.listen(3000, function () {
 	console.log("Server started at port 3000");
 });
+
+
+https://api.openweathermap.org/data/2.5/weather?q=Krakow&appid=172b0f4726adc501c48d1237bd59c3b5&units=metric
