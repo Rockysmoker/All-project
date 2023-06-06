@@ -5,10 +5,10 @@ body {
 .image {
 	text-align: center;
 	margin-left: 50px;
+	
 }
 .intro {
 	text-align: center;
-	padding-bottom: 20px;
 }
 .form-signin {
 	max-width: 330px;
@@ -27,14 +27,13 @@ body {
 
 .middle {
 	border-radius: 0;
-    margin-bottom: -1px;
+	margin-bottom: -1px;
 }
 
 .bottom {
 	margin-bottom: 10px;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
-	
 }
 
 .rights {
