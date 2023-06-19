@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const app = express();
 
 let ithems = ["Buy Food", "Cook Food", "Eat Food"];
+let workItems = [];
 
 app.set("view engine", "ejs");
 
@@ -19,17 +20,27 @@ app.get("/", function (req, res) {
 	};
 	let day = today.toLocaleDateString("en-US", options);
 
-	res.render("list", { kindOfDay: day, newListIthems: ithems });
+	res.render("list", { listTitle: day, newListIthems: ithems });
 });
 
 app.post("/", function (req, res) {
 	// Our input is stored in this app.post
-	let ithem = req.body.newIthem;
+	let item = req.body.newIthem;
 
-	ithems.push(ithem);
-
-	res.redirect("/");
+	if (req.body.list === "Work") {
+		workIthems.push(item);
+		res.redirect("/work");
+	} else {
+		workIthems.push(item);
+		res.redirect("/");
+	}
 });
+
+app.get("/work", function (req, res) {
+	res.render("list", { listTitle: "Work List", newListIthems: workItems });
+});
+
+app.post("/work", function (req, res) {});
 
 app.listen(3000, function () {
 	console.log("Server is running on port 3000");
