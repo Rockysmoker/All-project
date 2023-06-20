@@ -16,19 +16,20 @@
     </div>
 
     <div class="box">
-        <% for (i=0; i<newListIthems.length; i++){ %>
+        <% for (i=0; i<newListItems.length; i++){ %>
             <div class="item">
                 <input type="checkbox">
                 <p>
-                    <%= newListIthems[i] %>
+                    <%= newListItems[i] %>
                 </p>
             </div>
 
             <% } %>
 
                 <form class="item" action="/" method="post">
-                    <input type="text" name="newIthem" placeholder="New Ithem" autocomplete="off">
-                    <button type="submit" name="list" value="<%= listTitle %>">+</button>
+                    <input type="text" name="newItem" placeholder="New Ithem" autocomplete="off">
+                    <button type="submit" name="list" value="<%= listTitle === 'Work List' ? 'Work' : 'default' %>">+</button>
+
 
                 </form>
     </div>
@@ -37,5 +38,8 @@
 
 
 </body>
+<footer>
+    Copyright 2023
+</footer>
 
 </html>
