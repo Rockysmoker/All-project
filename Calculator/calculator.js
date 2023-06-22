@@ -33,4 +33,4 @@ app.listen(3000, function () {
 });
 
 
-https://api.openweathermap.org/data/2.5/weather?q=Krakow&appid=172b0f4726adc501c48d1237bd59c3b5&units=metric
+//https://api.openweathermap.org/data/2.5/weather?q=Krakow&appid=172b0f4726adc501c48d1237bd59c3b5&units=metric
