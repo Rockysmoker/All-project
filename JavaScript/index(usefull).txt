@@ -5,7 +5,7 @@ When working with Arrow Functions, you have a couple of "syntax shortcuts" avail
 
 Most importantly, you should know about the following alternatives:
 //-----------------------------------------------------------------------------
-1) Omitting parameter list parentheses
+1. Omitting parameter list parentheses
 
 If your arrow functions takes exactly one parameter, you may omit the wrapping parentheses.
 
@@ -21,7 +21,7 @@ If your function takes no parameters, parentheses must not be omitted - () => { 
 
 If your function takes more than one parameter, you also must not omit parentheses - userName, userAge => { ... } would be invalid ((userName, userAge) => { ... } is correct)!
 //----------------------------------------------------------------------------
-2) Omitting function body curly braces
+2. Omitting function body curly braces
 
 If your arrow function contains no other logic but a return statement, you may omit the curly braces and the return keyword.
 
@@ -38,9 +38,9 @@ The following code would be invalid:
 number => return number * 3; // invalid because return keyword must also be omitted!
 number => if (number === 2) { return 5 }; // invalid because if statements can't be returned
 //----------------------------------------------------------------------------
-3) Special case: Just returning an object
+3. Special case: Just returning an object
 
-If you go for the shorter alternative explained in 2) and you're trying to return a JavaScript object, you may end up with the following, invalid code:
+If you go for the shorter alternative explained in 2. and you're trying to return a JavaScript object, you may end up with the following, invalid code:
 
 number => { age: number }; // trying to return an object
 This code would be invalid because JavaScript treats the curly braces as function body wrappers (not as code that creates a JS object).
