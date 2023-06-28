@@ -1,10 +1,13 @@
+import "./ExpenseItem.css";
+
 function ExpenseItem() {
 	return (
-		<div>
-			<h2>Expense item!</h2>
-			<p>Olcia jest bardzo dużym głupolem</p>
-			<p>Kuba też jest głupolem</p>
-			<h4>Koniec histori :/</h4>
+		<div className="expense-item">
+			<div>Dzisiejsza data</div>
+			<div className="expense-item__description">
+				<h2>Dupa Insurence</h2>
+				<div className="expense-item__price">500$$$</div>
+			</div>
 		</div>
 	);
 }
