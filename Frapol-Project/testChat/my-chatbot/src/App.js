@@ -50,7 +50,7 @@ const theme = {
     botBubbleColor: '#8ed1fc;',
     headerFontColor: 'white',
     botFontColor: 'white',
-    userBubbleColor: '#FF5733',
+    userBubbleColor: '#F4D160',
     userFontColor: 'white',
 };
  
