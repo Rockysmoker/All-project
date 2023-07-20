@@ -44,10 +44,10 @@ const steps = [
  
 // Creating our own theme
 const theme = {
-    background: '#C9FF8F',
-    headerBgColor: '#197B22',
+    background: '#8CC0DE',
+    headerBgColor: '#1D5D9B',
     headerFontSize: '20px',
-    botBubbleColor: '#0F3789',
+    botBubbleColor: '#8ed1fc;',
     headerFontColor: 'white',
     botFontColor: 'white',
     userBubbleColor: '#FF5733',
@@ -56,7 +56,7 @@ const theme = {
  
 // Set some properties of the bot
 const config = {
-    botAvatar: "img.png",
+    botAvatar: "/Favi.jpeg",
     floating: true,
 };
  
@@ -68,7 +68,7 @@ function App() {
  
                     // This appears as the header
                     // text for the chat bot
-                    headerTitle="GeekBot"
+                    headerTitle="FraBot"
                     steps={steps}
                     {...config}
  
