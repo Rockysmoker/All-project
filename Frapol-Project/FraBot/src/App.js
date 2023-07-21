@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 const steps = [
     {
         id: '0',
-        message: 'Hey Geek!',
+        message: 'Hey Human!',
  
         // This calls the next id
         // i.e. id 1 in this case
@@ -14,7 +14,7 @@ const steps = [
  
         // This message appears in
         // the bot chat bubble
-        message: 'Please write your username',
+        message: 'Jak masz na imię?',
         trigger: '2'
     }, {
         id: '2',
@@ -25,7 +25,7 @@ const steps = [
         trigger: '3',
     }, {
         id: '3',
-        message: " hi {previousValue}, how can I help you?",
+        message: " Hi {previousValue}, w czym mogę Ci pomóc?",
         trigger: 4
     }, {
         id: '4',
@@ -34,8 +34,8 @@ const steps = [
             // When we need to show a number of
             // options to choose we create alist
             // like this
-            { value: 1, label: 'View Courses' },
-            { value: 2, label: 'Read Articles' },
+            { value: 1, label: 'Skontaktuj się' },
+            { value: 2, label: 'Zadaj pytanie' },
  
         ],
         end: true
