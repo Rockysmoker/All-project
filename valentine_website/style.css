@@ -1,0 +1,113 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    background: url('https://beamish-cupcake-729721.netlify.app/33e9ac02d903c17d9dddd8f9042639d3.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.intro, .note {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    background-color: rgba(255,255,255,0.8);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .intro, .note {
+        width: 90%;
+        padding: 30px;
+    }
+
+    body {
+        background-size: auto 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro, .note {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+/* Interactivity enhancement */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff5f5f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff8585;
+}
+    
